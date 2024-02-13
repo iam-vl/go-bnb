@@ -74,7 +74,7 @@
       <div class="col">
         <h1 class="mt-3">Search for Availability</h1>
 
-        <form action="reservation.html" method="get" class="needs-validation">
+        <form action="reservation.html" method="get" class="needs-validation" novalidate>
           <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
           <div class="row">
             <div class="col">
@@ -82,14 +82,15 @@
                 <div class="col-md-6">
                   <label for="start_date">Starting Date</label>
                   <input required class="form-control" type="date" name="start_date" id="start_date">
-                  <small id="startDateHelp" class="form-text text-muted">Enter your starting date in YYYY-MM-DD
-                    format</small>
+                  <small id="startDateHelp" class="form-text text-muted">Enter your starting date</small>
+                  <div class="invalid-feedback">Please enter a valid date.</div>
                 </div>
                 <div class="col-md-6">
                   <label for="end_date">Ending Date</label>
                   <input required class="form-control" type="date" name="end_date" id="end_date">
-                  <small id="endDateHelp" class="form-text text-muted">Enter your ending date in YYYY-MM-DD
-                    format</small>
+                  <small id="endDateHelp" class="form-text text-muted">Enter your ending date</small>
+                  <div class="invalid-feedback">Please enter a valid date.</div>
+                
                 </div>
               </div>
             </div>
@@ -145,7 +146,7 @@
           // Fetch all the forms we want to apply custom Bootstrap validation styles to
           let forms = document.getElementsByClassName('needs-validation');
           // Loop over them and prevent submission
-          let validation = Array.prototype.filter.call(forms, function (form) {
+          Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
               if (form.checkValidity() === false) {
                 event.preventDefault();
