@@ -27,6 +27,9 @@
 
     .redText { color: red; }
     .notie-container { box-shadow: none; } 
+    .datepicker { z-index: 150; }
+    /* .swal2-actions { z-index: 0 ! important; } */
+
   </style>
 
 </head>
@@ -78,29 +81,11 @@
 
         <form action="reservation.html" method="get" class="needs-validation" novalidate>
           <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
-          <!-- <div class="row">
-            <div class="col">
-              <div class="row" id="reservation-dates">
-                <div class="col-md-6">
-                  <label for="start_date">Starting Date</label>
-                  <input required class="form-control" type="date" name="start_date" id="start_date">
-                  <small id="startDateHelp" class="form-text text-muted">Enter your starting date</small>
-                  <div class="invalid-feedback">Please enter a valid date.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="end_date">Ending Date</label>
-                  <input required class="form-control" type="date" name="end_date" id="end_date">
-                  <small id="endDateHelp" class="form-text text-muted">Enter your ending date</small>
-                  <div class="invalid-feedback">Please enter a valid date.</div>
-                
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="form-row">
             <div class="col">
               <div id="reservation-dates" class="form-row">
                 <div class="col-md-3">
+                  <!-- disabled required -->
                   <input required class="form-control"  type="text" name="end_date" id="end_date" placeholder="Arrival date">
                 </div>
                 <div class="col-md-3">
@@ -193,13 +178,10 @@
         </div>
       </form>
       `;
-      attention.custom({msg: html, title: "Choose your dates"});
-      //attention.error({msg: "Oops..."});
-      // icon = "error";
-      // title = "Oops...";
-      // text = "Something went wrong!";
-      // footer = '<a href="#">Why do I have this issue?</a>';
-      // notifyModal(icon, title, text, footer);
+      attention.custom({
+        msg: html, 
+        title: "Choose your dates",
+      });
     });
 
     const elem = document.getElementById('reservation-dates');
@@ -244,7 +226,7 @@
           didOpen: (toast) => {
             toast.onmouseenter = Swal.stopTimer;
             toast.onmouseleave = Swal.resumeTimer;
-          }
+          },
         });
         Toast.fire({
           // icon: icon,
@@ -291,12 +273,18 @@
           backdrop: false, // non default
           focusConfirm: false,
           showCancelButton: true, // non default
-          // willOpen: () => {
-          //   const elModal = document.getElementById("reservation-dates-modal");
-          //   const rp = new DateRangePicker(elModal, {
-          //     format: "yyyy-mm-dd",
-          //     showOnFocus: true
-          //   });
+          willOpen: () => {
+            const elModal = document.getElementById('reservation-dates-modal');
+            const rp = new DateRangePicker(elModal, {
+              format: 'yyyy-mm-dd',
+              showOnFocus: true,
+            })
+          },
+          // didOpen: () => {
+          //   console.log("Calling didOpen()")
+          //   document.getElementById("start").removeAttribute("disabled");
+          //   document.getElementById("end").removeAttribute("disabled");
+          //   console.log("After calling didOpen()")
           // },
           preConfirm: () => {
             return [
