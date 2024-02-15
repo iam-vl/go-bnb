@@ -156,6 +156,7 @@
 
   <script>
     console.log("printing some from javascript");
+    let attention = Prompt();
     (function () {
       'use strict';
       window.addEventListener('load', function () {
@@ -176,26 +177,12 @@
 
     btn = document.getElementById("colorButton");
     btn.addEventListener("click", function () {
-      icon = "error";
-      title = "Oops...";
-      text = "Something went wrong!";
-      footer = '<a href="#">Why do I have this issue?</a>';
-      notifyModal(icon, title, text, footer);
-      
-      // Swal.fire({
-      //   title: "Good job!",
-      //   text: "You clicked the button!",
-      //   icon: "success"
-      // });
-      // notify("This is my message", "warning")
-
-      // let el = document.getElementById("myPara");
-      // if (el.classList.contains("redText")) {
-      //   el.classList.remove("redText");
-      // } else {
-      //   el.classList.add("redText");
-      // }
-
+      attention.success();
+      // icon = "error";
+      // title = "Oops...";
+      // text = "Something went wrong!";
+      // footer = '<a href="#">Why do I have this issue?</a>';
+      // notifyModal(icon, title, text, footer);
     });
 
     const elem = document.getElementById('reservation-dates');
@@ -217,6 +204,19 @@
         text: text,
         footer: footerText
       });
+    }
+
+    function Prompt() {
+      let toast = function() {
+        console.log("Clicked button and got toast.");
+      }
+      let success = function() {
+        console.log("Clicked button and got success.")
+      }
+      return { 
+        toast: toast,
+        success: success, 
+      }
     }
 
   </script>
