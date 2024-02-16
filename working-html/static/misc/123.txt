@@ -1,0 +1,146 @@
+<div class="col">
+  <div class="form-row" id="reservation-dates-modal">
+    <div class="col">
+      <input required="" class="form-control datepicker-input in-edit" type="text" name="start" id="start"
+        placeholder="Arrival">
+      <div class="datepicker datepicker-dropdown datepicker-orient-left datepicker-orient-bottom active"
+        style="left: 5px; top: 38px;">
+        <div class="datepicker-picker">
+          <div class="datepicker-header">
+            <div class="datepicker-title" style="display: none;"></div>
+            <div class="datepicker-controls"><button type="button" class="button prev-button prev-btn"
+                tabindex="-1">«</button><button type="button" class="button view-switch" tabindex="-1">February
+                2024</button><button type="button" class="button next-button next-btn" tabindex="-1">»</button></div>
+          </div>
+          <div class="datepicker-main">
+            <div class="datepicker-view">
+              <div class="days">
+                <div class="days-of-week"><span class="dow">Su</span><span class="dow">Mo</span><span
+                    class="dow">Tu</span><span class="dow">We</span><span class="dow">Th</span><span
+                    class="dow">Fr</span><span class="dow">Sa</span></div>
+                <div class="datepicker-grid"><span data-date="1706385600000"
+                    class="datepicker-cell day prev">28</span><span data-date="1706472000000"
+                    class="datepicker-cell day prev">29</span><span data-date="1706558400000"
+                    class="datepicker-cell day prev">30</span><span data-date="1706644800000"
+                    class="datepicker-cell day prev">31</span><span data-date="1706731200000"
+                    class="datepicker-cell day">1</span><span data-date="1706817600000"
+                    class="datepicker-cell day">2</span><span data-date="1706904000000"
+                    class="datepicker-cell day">3</span><span data-date="1706990400000"
+                    class="datepicker-cell day">4</span><span data-date="1707076800000"
+                    class="datepicker-cell day">5</span><span data-date="1707163200000"
+                    class="datepicker-cell day">6</span><span data-date="1707249600000"
+                    class="datepicker-cell day">7</span><span data-date="1707336000000"
+                    class="datepicker-cell day">8</span><span data-date="1707422400000"
+                    class="datepicker-cell day">9</span><span data-date="1707508800000"
+                    class="datepicker-cell day">10</span><span data-date="1707595200000"
+                    class="datepicker-cell day">11</span><span data-date="1707681600000"
+                    class="datepicker-cell day">12</span><span data-date="1707768000000"
+                    class="datepicker-cell day">13</span><span data-date="1707854400000"
+                    class="datepicker-cell day">14</span><span data-date="1707940800000"
+                    class="datepicker-cell day">15</span><span data-date="1708027200000"
+                    class="datepicker-cell day focused">16</span><span data-date="1708113600000"
+                    class="datepicker-cell day">17</span><span data-date="1708200000000"
+                    class="datepicker-cell day">18</span><span data-date="1708286400000"
+                    class="datepicker-cell day">19</span><span data-date="1708372800000"
+                    class="datepicker-cell day">20</span><span data-date="1708459200000"
+                    class="datepicker-cell day">21</span><span data-date="1708545600000"
+                    class="datepicker-cell day">22</span><span data-date="1708632000000"
+                    class="datepicker-cell day">23</span><span data-date="1708718400000"
+                    class="datepicker-cell day">24</span><span data-date="1708804800000"
+                    class="datepicker-cell day">25</span><span data-date="1708891200000"
+                    class="datepicker-cell day">26</span><span data-date="1708977600000"
+                    class="datepicker-cell day">27</span><span data-date="1709064000000"
+                    class="datepicker-cell day">28</span><span data-date="1709150400000"
+                    class="datepicker-cell day">29</span><span data-date="1709236800000"
+                    class="datepicker-cell day next">1</span><span data-date="1709323200000"
+                    class="datepicker-cell day next">2</span><span data-date="1709409600000"
+                    class="datepicker-cell day next">3</span><span data-date="1709496000000"
+                    class="datepicker-cell day next">4</span><span data-date="1709582400000"
+                    class="datepicker-cell day next">5</span><span data-date="1709668800000"
+                    class="datepicker-cell day next">6</span><span data-date="1709755200000"
+                    class="datepicker-cell day next">7</span><span data-date="1709841600000"
+                    class="datepicker-cell day next">8</span><span data-date="1709928000000"
+                    class="datepicker-cell day next">9</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="datepicker-footer">
+            <div class="datepicker-controls"><button type="button" class="button today-button today-btn" tabindex="-1"
+                style="display: none;">Today</button><button type="button" class="button clear-button clear-btn"
+                tabindex="-1" style="display: none;">Clear</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <input required="" class="form-control datepicker-input" type="text" name="end" id="end" placeholder="Departure">
+      <div class="datepicker datepicker-dropdown">
+        <div class="datepicker-picker">
+          <div class="datepicker-header">
+            <div class="datepicker-title" style="display: none;"></div>
+            <div class="datepicker-controls"><button type="button" class="button prev-button prev-btn"
+                tabindex="-1">«</button><button type="button" class="button view-switch" tabindex="-1">February
+                2024</button><button type="button" class="button next-button next-btn" tabindex="-1">»</button></div>
+          </div>
+          <div class="datepicker-main">
+            <div class="datepicker-view">
+              <div class="days">
+                <div class="days-of-week"><span class="dow">Su</span><span class="dow">Mo</span><span
+                    class="dow">Tu</span><span class="dow">We</span><span class="dow">Th</span><span
+                    class="dow">Fr</span><span class="dow">Sa</span></div>
+                <div class="datepicker-grid"><span data-date="1706385600000"
+                    class="datepicker-cell day prev">28</span><span data-date="1706472000000"
+                    class="datepicker-cell day prev">29</span><span data-date="1706558400000"
+                    class="datepicker-cell day prev">30</span><span data-date="1706644800000"
+                    class="datepicker-cell day prev">31</span><span data-date="1706731200000"
+                    class="datepicker-cell day">1</span><span data-date="1706817600000"
+                    class="datepicker-cell day">2</span><span data-date="1706904000000"
+                    class="datepicker-cell day">3</span><span data-date="1706990400000"
+                    class="datepicker-cell day">4</span><span data-date="1707076800000"
+                    class="datepicker-cell day">5</span><span data-date="1707163200000"
+                    class="datepicker-cell day">6</span><span data-date="1707249600000"
+                    class="datepicker-cell day">7</span><span data-date="1707336000000"
+                    class="datepicker-cell day">8</span><span data-date="1707422400000"
+                    class="datepicker-cell day">9</span><span data-date="1707508800000"
+                    class="datepicker-cell day">10</span><span data-date="1707595200000"
+                    class="datepicker-cell day">11</span><span data-date="1707681600000"
+                    class="datepicker-cell day">12</span><span data-date="1707768000000"
+                    class="datepicker-cell day">13</span><span data-date="1707854400000"
+                    class="datepicker-cell day">14</span><span data-date="1707940800000"
+                    class="datepicker-cell day">15</span><span data-date="1708027200000"
+                    class="datepicker-cell day focused">16</span><span data-date="1708113600000"
+                    class="datepicker-cell day">17</span><span data-date="1708200000000"
+                    class="datepicker-cell day">18</span><span data-date="1708286400000"
+                    class="datepicker-cell day">19</span><span data-date="1708372800000"
+                    class="datepicker-cell day">20</span><span data-date="1708459200000"
+                    class="datepicker-cell day">21</span><span data-date="1708545600000"
+                    class="datepicker-cell day">22</span><span data-date="1708632000000"
+                    class="datepicker-cell day">23</span><span data-date="1708718400000"
+                    class="datepicker-cell day">24</span><span data-date="1708804800000"
+                    class="datepicker-cell day">25</span><span data-date="1708891200000"
+                    class="datepicker-cell day">26</span><span data-date="1708977600000"
+                    class="datepicker-cell day">27</span><span data-date="1709064000000"
+                    class="datepicker-cell day">28</span><span data-date="1709150400000"
+                    class="datepicker-cell day">29</span><span data-date="1709236800000"
+                    class="datepicker-cell day next">1</span><span data-date="1709323200000"
+                    class="datepicker-cell day next">2</span><span data-date="1709409600000"
+                    class="datepicker-cell day next">3</span><span data-date="1709496000000"
+                    class="datepicker-cell day next">4</span><span data-date="1709582400000"
+                    class="datepicker-cell day next">5</span><span data-date="1709668800000"
+                    class="datepicker-cell day next">6</span><span data-date="1709755200000"
+                    class="datepicker-cell day next">7</span><span data-date="1709841600000"
+                    class="datepicker-cell day next">8</span><span data-date="1709928000000"
+                    class="datepicker-cell day next">9</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="datepicker-footer">
+            <div class="datepicker-controls"><button type="button" class="button today-button today-btn" tabindex="-1"
+                style="display: none;">Today</button><button type="button" class="button clear-button clear-btn"
+                tabindex="-1" style="display: none;">Clear</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
